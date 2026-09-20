@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "cmake: configure (mingw preset)",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--preset",
+                "mingw"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "cmake: build",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "--preset",
+                "mingw"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOrder": "sequence",
+            "dependsOn": "cmake: configure (mingw preset)",
+            "detail": "Configure + build qtds (Qt6 + vcpkg/cpr). Output: build/qtds.exe with runtime DLLs deployed."
+        }
+    ]
+}

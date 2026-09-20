@@ -1,0 +1,60 @@
+# ---- CMake / build output ----
+build/
+build-*/
+out/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CMakeUserPresets.json
+CTestTestfile.cmake
+Makefile
+*.cbp
+.qmake.stash
+install_manifest.txt
+compile_commands.json
+
+# ---- Qt ----
+*_autogen/
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.qm
+*.qmlc
+*.jsc
+*.user
+*.user.*
+
+# ---- Compiled objects / binaries ----
+*.exe
+*.dll
+*.so
+*.so.*
+*.dylib
+*.a
+*.lib
+*.obj
+*.o
+*.lo
+*.pdb
+*.ilk
+*.exp
+*.idb
+
+# ---- Logs / runtime output ----
+*.log
+
+# ---- IDE / editor ----
+.idea/
+.vs/
+.vscode/ipch/
+.cache/
+*.sln
+*.vcxproj
+*.vcxproj.*
+*.xcodeproj/
+
+# ---- OS junk ----
+Thumbs.db
+Desktop.ini
+.DS_Store
